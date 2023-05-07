@@ -1,0 +1,25 @@
+<html>
+
+    <body>
+
+        <form action='/predict' method="POST">
+            Date (YYYY-MM-DD): <input type='text' name='dteday'><br>
+            Year: <input type='text' name='yr'><br>
+            Holiday: <input type='text' name='holiday'><br>
+            Working day: <input type='text' name='workingday'><br>
+            Feeling Temperature: <input type='text' name='atemp'><br>
+            Humidity: <input type='text' name='hum'><br>
+            Windspeed: <input type='text' name='windspeed'><br>
+            Spring season: <input type='text' name='season_spring'><br>
+            Summer season: <input type='text' name='season_summer'><br>
+            Fall season: <input type='text' name='season_fall'><br>
+            Medium weather situation: <input type='text' name='weathersit_medium'><br>
+            Medium weather situation: <input type='text' name='weathersit_bad'><br>
+            Total predicted bike rentals: {{result}} <br>
+            <input type='submit' value='Predict'>
+
+        </form>
+
+    </body>
+
+</html>
